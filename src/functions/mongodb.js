@@ -16,8 +16,12 @@ async function uploadAllImageData (imageData) {
               snapersUnsplashPortfolio: imageData[i]["user"]["links"]["html"],
            });
 
-        await image.save().then(() => console.log('Thank GOD, all went well'));
+        await image.save();
     }
+
+    console.log('Uploaded 30 images metadata to MongoDB');
+
+
 
     return true;
 
