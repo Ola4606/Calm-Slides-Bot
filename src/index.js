@@ -38,7 +38,7 @@ async function main () {
 
 }
 
-schedule.scheduleJob('*/10 * * * *', async () => {
+schedule.scheduleJob('*/2 * * * *', async () => {
     await main();
   });
 

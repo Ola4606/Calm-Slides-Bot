@@ -3,7 +3,7 @@ const nodeFetch = require('node-fetch');
 
 async function getUnsplashImages() { //every 10mins
 
-  const imgCount = 6;
+  const imgCount = 30;
   const  {createApi} = createApiObject;
 
   // creating instance
