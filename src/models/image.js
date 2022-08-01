@@ -16,8 +16,8 @@ const imageSchema = new Schema(
       required: true,
     },
     blurHash: {
-      type: String,
-      required: true,
+      type: String | null,
+      required: false,
     },
     unsplashImagePage: {
       type: String,
